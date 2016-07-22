@@ -12,6 +12,9 @@ class MeViewController: RootViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let meView  = MeView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 120))
+        self.view.addSubview(meView)
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
