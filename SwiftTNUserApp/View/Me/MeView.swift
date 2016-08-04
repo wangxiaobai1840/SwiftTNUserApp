@@ -10,13 +10,15 @@ import UIKit
 
 class MeView: UIView {
     var bg_img:UIImageView?
+    var  bgSV:UIScrollView?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.createView()
     }
     
     func createView() ->() {
-    
+      bgSV = UIScrollView.init(frame: CGRect(x: 0, y: 0, width: self.frame.size.width, height: self.frame.size.height))
         bg_img = UIImageView.init(image: UIImage(named: "bg_image"))
         bg_img?.frame = CGRect(x: 0, y: 0, width: self.frame.size.width, height: 120)
         bg_img?.contentMode = .ScaleAspectFill
